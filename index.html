@@ -9,29 +9,61 @@
     <link rel="stylesheet" href ="./css/style.css">
 </head>
 <body>
-    <h1 class="text-center mt-4">YOUR QUIZ TITLE HERE</h1>
+    <h1 class="text-center mt-4">WHAT ANIMAL ARE YOU?</h1>
     
     <!-- Start quiz element -->
     <div class="container d-flex justify-content-center" id="question-1">
       <div class="card my-4 p-4 question-block" style="width: 75%;">
-        <h4 class="mb-3">YOUR QUIZ QUESTION HERE</h4>
+        <h4 class="mb-3">WHAT IS YOUR IDEAL DAY?</h4>
         <div class="row g-2">
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">ANSWER CHOICE A</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="LION">Exploring outside</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">ANSWER CHOICE B</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="TURTLE">Relaxing at home</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">ANSWER CHOICE C</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">ANSWER CHOICE D</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="BIRD">Hanging with friends</button>
           </div>
         </div>
       </div>
     </div>
 
+  <!-- Question 2 -->
+  <div class="container d-flex justify-content-center" id="question-2">
+    <div class="card my-4 p-4 question-block" style="width:75%;">
+      <h4 class="mb-3">2) Pick a strength</h4>
+      <div class="row g-2">
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="lion">Confidence</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="turtle">Patience</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="bird">Adaptability</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question 3 -->
+  <div class="container d-flex justify-content-center" id="question-3">
+    <div class="card my-4 p-4 question-block" style="width:75%;">
+      <h4 class="mb-3">3) How do you handle challenges?</h4>
+      <div class="row g-2">
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="lion">Face them head-on</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="turtle">Think things through slowly</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="bird">Try creative solutions</button>
+        </div>
+      </div>
+    </div>
+  </div>
     
     
     <!-- End quiz element -->
@@ -40,16 +72,19 @@
 
 
 
-    <div class="container d-flex justify-content-center">
-      <button id="show-result" class="btn btn-success my-4">Show Results</button>
-    </div>    
-    <!-- Output the result here -->
-    <div class="container d-flex justify-content-center">
-      <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
-        <h3>Your Result:</h3>
-        <p id="result-text"></p>
-      </div>
+ <!-- Controls -->
+  <div class="container d-flex justify-content-center">
+    <button id="show-result" class="btn btn-success my-4">Show Results</button>
+    <button id="reset-btn" class="btn btn-secondary my-4 ms-2">Reset</button>
+  </div>
+
+  <!-- Result output (hidden until used) -->
+  <div class="container d-flex justify-content-center">
+    <div id="result-container" class="card p-4 mb-4" style="width:75%; display:none;">
+      <h3>Your Result:</h3>
+      <p id="result-text"></p>
     </div>
+  </div>
     
     <!-- Connect to your script file here -->
      <script src = "./js/script.js"></script>
